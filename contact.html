@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">INSPIRES</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li class="active"><a href="./contact.html">Contact</a></li>
+        </ul>
+     <img src="./gambar/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-conten">
+            <h2>COFFEE INSPIRES ME</h2>
+            <div class="line"></div>
+            <h1>SYURBUN COFFEE</h1>
+            <a href="#" class="ctn">Tentang Coffe</a>
+        </div>
+    </header>
+        
+
+    <section class="footer">
+        <p>Syurbun Coffee, 2021, Subang</p>
+        <p>Copyright By Bageur Communty</p>
+    </section>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+</script>
+
+</body>
+</html>
